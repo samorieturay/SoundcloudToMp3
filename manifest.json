@@ -1,0 +1,17 @@
+{
+  "name": "SoundCloud to MP3",
+  "description": "From your SoundCloud url to MP3",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.soundcloud.com/*"],
+      "css": ["style.css"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
